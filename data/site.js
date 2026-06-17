@@ -2,13 +2,8 @@ export const profile = {
   name: "Vaibhavi Bachu",
   firstName: "Vaibhavi",
   title: "AI/ML Engineer",
-  tagline: "Building intelligent systems that learn, predict, and recommend.",
-  bio: `I'm an AI/ML Engineer with hands-on experience building end-to-end machine
-learning systems — from data cleaning pipelines and predictive maintenance
-models to recommendation engines and automation tools. I enjoy turning messy,
-real-world data into systems that make smart decisions, and I'm currently
-working on an AI-powered monitoring and recommendation dashboard for
-industrial reliability applications.`,
+  tagline: "Turning complex data into intelligent automation and actionable insights.",
+  bio: `I'm Vaibhavi, an AI/ML Engineer who enjoys turning ideas into products. Whether it's automating job applications, monitoring machine vibrations, analyzing market trends, or simplifying messy data, I love building solutions that make technology more useful, efficient, and impactful.`,
   location: "Hyderabad, India",
   email: "vaibhavibachu@gmail.com",
   github: "https://github.com/vaibhaviBachu",
@@ -30,6 +25,8 @@ export const experience = [
     points: [
       "Working on predictive maintenance solutions powered by vibration data and machine learning models.",
       "Currently building an AI-powered monitoring and recommendation dashboard for industrial reliability applications.",
+      "Developing predictive systems that predict machinery failure even before it occurs, significantly reducing unplanned downtime.",
+      "Implementing AI-powered monitoring and recommendation solutions for real-time industrial reliability insights.",
     ],
   },
   {
@@ -97,21 +94,22 @@ export const projects = [
     description:
       "An algorithmic trading platform that uses machine learning models to analyze market data, identify patterns, and generate trading signals to support data-driven trading decisions.",
     tech: ["Python", "Machine Learning", "Pandas", "APIs"],
-    github: "https://github.com/vaibhaviBachu",
+    github: "https://github.com/vaibhaviBachu/Trading_Platform.git",
+    inProgress: true,
   },
   {
     title: "AI-Powered Data Cleaning Platform",
     description:
       "An intelligent data cleaning tool that automates preprocessing — handling missing values, outliers, and duplicates — using ML-driven heuristics to prepare raw datasets for analysis.",
     tech: ["Python", "Pandas", "Scikit-learn", "Data Engineering"],
-    github: "https://github.com/vaibhaviBachu",
+    github: "https://github.com/vaibhaviBachu/Automatic_dataCleaning.git",
   },
   {
     title: "Automated Job Application Bot",
     description:
       "A CI/CD-powered automation pipeline using GitHub Actions that scans job postings and automatically applies on a schedule, reducing manual effort in the job search process.",
     tech: ["Python", "GitHub Actions", "Automation", "CI/CD"],
-    github: "https://github.com/vaibhaviBachu",
+    github: "https://github.com/vaibhaviBachu/Automatic_JobParser.git",
   },
   {
     title: "Predictive Maintenance — AI-Powered Vibration Monitoring",
