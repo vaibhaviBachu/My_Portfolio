@@ -23,27 +23,27 @@ function HexCell({ label }) {
 
   return (
     <div
-      className={`hover:scale-110 cursor-default ${
+      className={`hover:scale-105 sm:hover:scale-110 cursor-default transition-transform ${
         featured ? "hex-glow-featured" : "hex-glow"
       }`}
     >
       <div
-        className={`w-[130px] h-[150px] md:w-[160px] md:h-[185px] flex items-center justify-center ${
+        className={`w-[100px] h-[115px] sm:w-[130px] sm:h-[150px] md:w-[160px] md:h-[185px] flex items-center justify-center flex-shrink-0 ${
           featured ? "bg-dark" : "bg-primary"
         }`}
         style={{ clipPath: HEX_CLIP }}
       >
         <div
-          className={`w-[124px] h-[144px] md:w-[154px] md:h-[179px] flex flex-col items-center justify-center text-center px-3 ${
+          className={`w-[94px] h-[109px] sm:w-[124px] sm:h-[144px] md:w-[154px] md:h-[179px] flex flex-col items-center justify-center text-center px-2 sm:px-3 ${
             featured ? "bg-primary" : "bg-surface"
           }`}
           style={{ clipPath: HEX_CLIP }}
         >
-          <span className="text-sm md:text-base font-extrabold text-white leading-tight">
+          <span className="text-xs sm:text-sm md:text-base font-extrabold text-white leading-tight">
             {main}
           </span>
           {detail && (
-            <span className="text-[9px] md:text-[10px] font-semibold text-white/60 mt-1 leading-tight">
+            <span className="text-[7px] sm:text-[9px] md:text-[10px] font-semibold text-white/60 mt-0.5 sm:mt-1 leading-tight">
               {detail}
             </span>
           )}
@@ -71,11 +71,11 @@ export default function Skills() {
         <div className="absolute bottom-0 right-0 w-[400px] h-[300px] rounded-full bg-primary/6 blur-[100px]" />
       </div>
 
-      <ScrollReveal className="relative max-w-6xl mx-auto px-6 mb-16">
-        <p className="text-sm md:text-base font-extrabold uppercase tracking-[0.2em] text-primary mb-3">
+      <ScrollReveal className="relative max-w-6xl mx-auto px-4 sm:px-6 mb-12 sm:mb-16">
+        <p className="text-xs sm:text-sm md:text-base font-extrabold uppercase tracking-[0.2em] text-primary mb-2 sm:mb-3">
           What I work with
         </p>
-        <h2 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-tight">
           My{" "}
           <span
             className="text-primary"
@@ -87,19 +87,19 @@ export default function Skills() {
             Skills
           </span>
         </h2>
-        <div className="mt-4 w-20 h-1 rounded-full bg-primary shadow-[0_0_16px_rgba(226,52,14,0.9)]" />
-        <p className="mt-5 text-white/50 text-lg md:text-xl font-medium max-w-xl">
+        <div className="mt-3 sm:mt-4 w-12 sm:w-20 h-0.5 sm:h-1 rounded-full bg-primary shadow-[0_0_16px_rgba(226,52,14,0.9)]" />
+        <p className="mt-3 sm:mt-5 text-white/50 text-sm sm:text-base md:text-lg lg:text-xl font-medium max-w-xl">
           Technologies, frameworks, and tools I use to build intelligent systems.
         </p>
       </ScrollReveal>
 
-      <div className="relative flex flex-col gap-14 max-w-5xl mx-auto px-6">
+      <div className="relative flex flex-col gap-10 sm:gap-14 max-w-5xl mx-auto px-4 sm:px-6">
         {skills.map((group, i) => (
           <ScrollReveal key={group.category} delay={0.1 * (i + 1)}>
-            <div className="flex items-center gap-4 mb-7">
+            <div className="flex items-center gap-2 sm:gap-4 mb-5 sm:mb-7">
               <div className="h-px flex-1 bg-white/8" />
               <span
-                className="text-sm md:text-base font-extrabold uppercase tracking-[0.15em] px-5 py-1.5 rounded-full border border-primary/40 text-primary"
+                className="text-xs sm:text-sm md:text-base font-extrabold uppercase tracking-[0.15em] px-3 sm:px-5 py-1 sm:py-1.5 rounded-full border border-primary/40 text-primary whitespace-nowrap"
                 style={{ textShadow: "0 0 14px rgba(226,52,14,0.5)" }}
               >
                 {group.category}
@@ -107,7 +107,7 @@ export default function Skills() {
               <div className="h-px flex-1 bg-white/8" />
             </div>
 
-            <div className="flex justify-center gap-4 md:gap-5 overflow-x-auto pb-2 scrollbar-hide">
+            <div className="flex justify-center gap-2 sm:gap-4 md:gap-5 overflow-x-auto pb-2 scrollbar-hide">
               {group.items.map((item) => (
                 <HexCell key={item} label={item} />
               ))}

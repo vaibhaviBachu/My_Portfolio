@@ -40,12 +40,12 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur-sm border-b border-white/10">
-      <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#home" className="text-white font-semibold text-3xl tracking-tight">
+      <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
+        <a href="#home" className="text-white font-semibold text-xl sm:text-2xl md:text-3xl tracking-tight flex-shrink-0">
           Vaibhavi<span className="text-primary">.</span>
         </a>
 
-        <ul className="hidden md:flex items-center gap-8 text-xl text-white/80">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8 text-sm lg:text-lg xl:text-xl text-white/80">
           {links.map((link) => (
             <li key={link.href}>
               <a
@@ -64,17 +64,17 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="hidden md:inline-block bg-primary hover:bg-primary-dark text-white text-xl font-medium px-7 py-3 rounded-full transition-colors"
+          className="hidden md:inline-block bg-primary hover:bg-primary-dark text-white text-sm lg:text-base xl:text-lg font-medium px-5 lg:px-7 py-2 lg:py-3 rounded-full transition-colors flex-shrink-0"
         >
           Let&apos;s Connect
         </a>
 
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white flex-shrink-0"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             {open ? (
               <path d="M6 6L18 18M6 18L18 6" strokeLinecap="round" />
             ) : (
@@ -85,25 +85,25 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <ul className="md:hidden flex flex-col gap-4 px-6 pb-6 text-white/80 text-sm">
+        <ul className="md:hidden flex flex-col gap-3 px-4 pb-4 text-white/80 text-sm bg-dark/95">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className={`transition-colors ${
-                  active === link.href ? "text-primary font-bold" : "hover:text-primary"
+                className={`block py-2 px-3 rounded transition-colors ${
+                  active === link.href ? "text-primary font-bold bg-primary/10" : "hover:text-primary hover:bg-white/5"
                 }`}
               >
                 {link.label}
               </a>
             </li>
           ))}
-          <li>
+          <li className="pt-2">
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="inline-block bg-primary text-white text-sm font-medium px-5 py-2 rounded-full"
+              className="block bg-primary text-white text-sm font-medium px-4 py-2.5 rounded-full text-center w-full hover:bg-primary-dark transition-colors"
             >
               Let&apos;s Connect
             </a>
