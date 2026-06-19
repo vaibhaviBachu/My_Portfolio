@@ -93,7 +93,7 @@ export const projects = [
     title: "AI Trading Platform",
     description:
       "An algorithmic trading platform that uses machine learning models to analyze market data, identify patterns, and generate trading signals to support data-driven trading decisions.",
-    tech: ["Python", "Machine Learning", "Pandas", "APIs"],
+    tech: ["Python", "TypeScript", "Machine Learning", "Pandas", "Docker", "APIs"],
     github: "https://github.com/vaibhaviBachu/Trading_Platform.git",
     inProgress: true,
   },
@@ -101,7 +101,7 @@ export const projects = [
     title: "AI-Powered Data Cleaning Platform",
     description:
       "An intelligent data cleaning tool that automates preprocessing — handling missing values, outliers, and duplicates — using ML-driven heuristics to prepare raw datasets for analysis.",
-    tech: ["Python", "Pandas", "Scikit-learn", "Data Engineering"],
+    tech: ["Python", "FastAPI", "Streamlit", "PostgreSQL", "Docker", "MinIO", "Ollama", "Prometheus", "Grafana", "N8N", "Pandas"],
     github: "https://github.com/vaibhaviBachu/Automatic_dataCleaning.git",
   },
   {
@@ -115,7 +115,7 @@ export const projects = [
     title: "Predictive Maintenance — AI-Powered Vibration Monitoring",
     description:
       "An end-to-end predictive maintenance system that analyzes vibration sensor data to detect early signs of machinery failure using deep learning models, helping prevent unplanned downtime.",
-    tech: ["Python", "TensorFlow/PyTorch", "Signal Processing", "CNN/RNN"],
+    tech: ["Python", "PostgreSQL", "FastAPI", "SQLAlchemy", "React", "Docker", "Swagger", "ORM"],
     github: "https://github.com/vaibhaviBachu",
   },
   {
