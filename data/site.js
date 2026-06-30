@@ -119,11 +119,11 @@ export const projects = [
     github: "https://github.com/vaibhaviBachu",
   },
   {
-    title: "Recommendation System",
+    title: "AI Chatbot",
     description:
-      "A recommendation engine built using collaborative filtering and content-based approaches to suggest relevant items to users based on their preferences and behavior.",
-    tech: ["Python", "Machine Learning", "Recommendation Algorithms"],
-    github: "https://github.com/vaibhaviBachu",
+      "A conversational AI chatbot that understands natural language queries and generates intelligent, context-aware responses for interactive, real-time conversations.",
+    tech: ["Python", "NLP", "LLMs", "Generative AI"],
+    github: "https://github.com/vaibhaviBachu/chatbot.git",
   },
   {
     title: "AI-Powered Monitoring & Recommendation Dashboard",
