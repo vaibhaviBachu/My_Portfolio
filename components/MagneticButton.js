@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 
-export default function MagneticButton({ children, href, className }) {
+export default function MagneticButton({ children, href, className, ...rest }) {
   const ref = useRef(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
@@ -27,6 +27,7 @@ export default function MagneticButton({ children, href, className }) {
       className={className}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      {...rest}
       style={{
         display: "inline-block",
         transform: `translate(${pos.x}px, ${pos.y}px)`,
