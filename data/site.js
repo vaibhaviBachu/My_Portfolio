@@ -126,11 +126,11 @@ export const projects = [
     github: "https://github.com/vaibhaviBachu/chatbot.git",
   },
   {
-    title: "AI-Powered Monitoring & Recommendation Dashboard",
+    title: "PINIT-DNA — Persistent Image DNA Fingerprint System",
     description:
-      "Currently building a real-time dashboard that combines predictive maintenance insights with recommendation features for industrial reliability use cases.",
-    tech: ["Python", "Machine Learning", "Dashboards"],
-    github: null,
+      "A backend API that generates and verifies a 6-layer invisible fingerprint for any image — combining SHA-256, perceptual hashing, edge signatures, color histograms, metadata provenance, and LSB steganography — to prove ownership and detect tampering even after compression, resizing, or color edits.",
+    tech: ["TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL", "Sharp", "Zod", "Jest"],
+    github: "https://github.com/PINIT-DNA/PINIT-DNA.git",
     inProgress: true,
   },
 ];
