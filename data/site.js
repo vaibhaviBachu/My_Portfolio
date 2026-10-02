@@ -53,6 +53,24 @@ export const experience = [
   },
 ];
 
+export const freelancing = [
+  {
+    title: "Jewellery Virtual Try-On Platform",
+    description:
+      "A web platform for photorealistic virtual jewellery try-on — customers upload a photo or use a live AR camera, browse a catalogue, and see the actual selected piece placed on themselves using landmark detection, segmentation, and geometry-based rendering.",
+    tech: ["Next.js", "TypeScript", "FastAPI", "MediaPipe", "ONNX", "PostgreSQL", "Redis", "Docker"],
+    github: "https://github.com/vaibhaviBachu/Virtual_Tryon.git",
+  },
+  {
+    title: "Deep Learning-Based Adaptive Antenna Selection for 6G Smartphones",
+    description:
+      "Using deep learning to dynamically select the best antenna configuration on 6G smartphones based on changing channel conditions, aiming to improve signal quality and energy efficiency.",
+    tech: ["Deep Learning", "6G", "Wireless Communications"],
+    github: null,
+    inProgress: true,
+  },
+];
+
 export const skills = [
   {
     category: "Programming Languages",

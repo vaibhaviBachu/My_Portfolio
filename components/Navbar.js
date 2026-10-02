@@ -6,6 +6,7 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
+  { href: "#freelancing", label: "Freelancing" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
 ];
@@ -15,7 +16,7 @@ export default function Navbar() {
   const [active, setActive] = useState("");
 
   useEffect(() => {
-    const sectionIds = ["home", "about", "skills", "experience", "projects", "contact"];
+    const sectionIds = ["home", "about", "skills", "experience", "freelancing", "projects", "contact"];
     const observers = [];
 
     sectionIds.forEach((id) => {
