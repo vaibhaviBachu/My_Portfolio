@@ -17,14 +17,18 @@ export default function Experience() {
             <ScrollReveal key={job.company} delay={0.15 * (i + 1)}>
               <div className="relative">
                 <span className="absolute -left-[25px] sm:-left-[39px] top-0.5 sm:top-1 w-3 sm:w-4 h-3 sm:h-4 rounded-full bg-primary border-3 sm:border-4 border-light flex-shrink-0" />
-                <p className="text-xs sm:text-sm md:text-base text-primary font-bold mb-1">{job.duration}</p>
+                {job.duration && (
+                  <p className="text-xs sm:text-sm md:text-base text-primary font-bold mb-1">{job.duration}</p>
+                )}
                 <h3 className="text-lg sm:text-2xl md:text-3xl font-extrabold text-dark">{job.role}</h3>
-                <p className="text-sm sm:text-lg md:text-xl text-dark/70 font-semibold mb-2 sm:mb-3">{job.company}</p>
-                <ul className="list-disc list-inside space-y-0.5 sm:space-y-1 text-dark/70 text-xs sm:text-base md:text-lg font-medium">
+                <p className="text-sm sm:text-lg md:text-xl text-dark/70 font-semibold mb-2 sm:mb-3">
+                  {[job.company, job.workMode, job.location].filter(Boolean).join(" · ")}
+                </p>
+                {job.points.length > 0 && <ul className="list-disc list-inside space-y-0.5 sm:space-y-1 text-dark/70 text-xs sm:text-base md:text-lg font-medium">
                   {job.points.map((point) => (
                     <li key={point} className="break-words">{point}</li>
                   ))}
-                </ul>
+                </ul>}
               </div>
             </ScrollReveal>
           ))}

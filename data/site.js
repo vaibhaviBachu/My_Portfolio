@@ -19,6 +19,13 @@ export const education = {
 
 export const experience = [
   {
+    role: "Junior AI Developer",
+    company: "Stealth Startup",
+    workMode: "Remote",
+    location: "Bangalore",
+    points: [],
+  },
+  {
     role: "AI/ML Engineer",
     company: "Sensovibe Reliability Pvt. Ltd.",
     duration: "Feb 2026 – Present",
