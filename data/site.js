@@ -23,6 +23,7 @@ export const experience = [
     company: "Stealth Startup",
     workMode: "Remote",
     location: "Bangalore",
+    duration: "Jul 2026 – Present",
     points: [
       "Building and integrating AI-powered features into the product as part of an early-stage, fast-moving team.",
       "Working with LLMs and prompt engineering to develop intelligent workflows and automation.",
@@ -33,12 +34,12 @@ export const experience = [
   {
     role: "AI/ML Engineer",
     company: "Sensovibe Reliability Pvt. Ltd.",
-    duration: "Feb 2026 – Present",
+    duration: "Feb 2026 – Jul 2026",
     points: [
-      "Working on predictive maintenance solutions powered by vibration data and machine learning models.",
-      "Currently building an AI-powered monitoring and recommendation dashboard for industrial reliability applications.",
-      "Developing predictive systems that predict machinery failure even before it occurs, significantly reducing unplanned downtime.",
-      "Implementing AI-powered monitoring and recommendation solutions for real-time industrial reliability insights.",
+      "Worked on predictive maintenance solutions powered by vibration data and machine learning models.",
+      "Built an AI-powered monitoring and recommendation dashboard for industrial reliability applications.",
+      "Developed predictive systems that predict machinery failure even before it occurs, significantly reducing unplanned downtime.",
+      "Implemented AI-powered monitoring and recommendation solutions for real-time industrial reliability insights.",
     ],
   },
   {
