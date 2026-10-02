@@ -23,7 +23,12 @@ export const experience = [
     company: "Stealth Startup",
     workMode: "Remote",
     location: "Bangalore",
-    points: [],
+    points: [
+      "Building and integrating AI-powered features into the product as part of an early-stage, fast-moving team.",
+      "Working with LLMs and prompt engineering to develop intelligent workflows and automation.",
+      "Developing and testing machine learning models, from data preparation through evaluation and deployment.",
+      "Collaborating remotely with engineers and founders to turn product ideas into working prototypes.",
+    ],
   },
   {
     role: "AI/ML Engineer",
